@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
+  googleFonts: { families: { 'Open+Sans': true } },
+  modules: ['@nuxtjs/google-fonts', '@pinia/nuxt'],
   postcss: {
     plugins: {
       tailwindcss: {},
