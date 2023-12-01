@@ -14,14 +14,29 @@
           w-3/4
         "
       >
-        home
+        <CatCard
+          v-for="cat in catList"
+          :key="cat.id"
+          :kitty="cat"
+        />
       </div>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue';
+import { storeToRefs } from 'pinia';
 
+import { useCatStore } from '@/store/cat';
+
+const catStore = useCatStore();
+
+const { catList } = storeToRefs(catStore);
+
+onMounted(() => {
+  catStore.getCats();
+});
 </script>
 
 <style scoped>

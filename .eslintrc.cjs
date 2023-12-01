@@ -12,6 +12,7 @@ module.exports = {
     'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
     'no-trailing-spaces': 'error',
     'object-curly-spacing': ['warn', 'always'],
+    'space-before-function-paren': ['error', 'never'],
     quotes: ['error', 'single'],
     semi: ['error', 'always']
   }

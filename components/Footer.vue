@@ -1,8 +1,6 @@
 <template>
-  <footer>
-    <nav className="text-center">
-      &copy; Jae Webb {{ footerDate }}
-    </nav>
+  <footer className="text-center">
+    &copy; Jae Webb {{ footerDate }}
   </footer>
 </template>
 
